@@ -1,0 +1,66 @@
+name: daily-episode
+
+on:
+  schedule:
+    - cron: "30 20 * * *" # 毎朝5:30（日本時間）。GitHub側の混雑で数十分遅れることがある
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-episode
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # 過去の回は episodes ブランチに置いてある（初回は無い）
+      - name: 過去の回を取得
+        run: |
+          if git ls-remote --exit-code --heads origin episodes; then
+            git clone --depth 1 --branch episodes "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" site
+            rm -rf site/.git
+          else
+            mkdir site
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: ffmpeg
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      - name: 今日の回をつくる
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python make_episode.py --out site
+
+      # 履歴を残さず1コミットで上書きし、リポジトリが音声で膨らまないようにする
+      - name: episodes ブランチに保存
+        working-directory: site
+        run: |
+          git init -q -b episodes
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "episodes $(TZ=Asia/Tokyo date +%F)"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" episodes
+          rm -rf .git
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
