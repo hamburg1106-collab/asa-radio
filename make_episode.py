@@ -233,14 +233,17 @@ def chunk_turns(turns):
     return chunks
 
 
+TTS_STYLE = "朝のニュースラジオの2人の会話です。明るく落ち着いたトーンで、ラジオらしい自然なテンポと間で読んでください。"
+
+
 def tts(chunk):
-    lines = "\n".join(f"{HOSTS[t['speaker']]['tts']}: {t['text']}" for t in chunk)
-    text = ("朝のニュースラジオの2人の会話です。明るく落ち着いたトーンで、"
-            "ラジオらしい自然なテンポと間で読んでください。\n\n" + lines)
+    # 2人で話すときは、発言ごとに話者を付けたパートに分ける必要がある（2026-10-23時点）
+    parts = [{"text": t["text"], "speechMetadata": {"speaker": HOSTS[t["speaker"]]["tts"]}} for t in chunk]
     speakers = [{"speaker": h["tts"], "voiceConfig": {"prebuiltVoiceConfig": {"voiceName": h["voice"]}}}
                 for h in HOSTS.values()]
     body = {
-        "contents": [{"parts": [{"text": text}]}],
+        "systemInstruction": {"parts": [{"text": TTS_STYLE}]},
+        "contents": [{"parts": parts}],
         "generationConfig": {
             "responseModalities": ["AUDIO"],
             "speechConfig": {"multiSpeakerVoiceConfig": {"speakerVoiceConfigs": speakers}},
@@ -248,10 +251,19 @@ def tts(chunk):
     }
     last = None
     for model in TTS_MODELS:  # 枠切れ(429)なら次のモデルへ
+        model = model.strip()
         try:
-            resp = gemini(model.strip(), body)
-            part = resp["candidates"][0]["content"]["parts"][0]
-            return base64.b64decode(part["inlineData"]["data"]), model.strip()
+            try:
+                resp = gemini(model, body)
+            except ApiError as e:
+                if e.status != 400 or "systemInstruction" not in body:
+                    raise
+                log(f"  {e} → 読み方の指示を外して再送")
+                body.pop("systemInstruction")
+                resp = gemini(model, body)
+            audio = b"".join(base64.b64decode(p["inlineData"]["data"])
+                             for p in resp["candidates"][0]["content"]["parts"] if "inlineData" in p)
+            return audio, model
         except ApiError as e:
             last = e
             if e.status != 429:
