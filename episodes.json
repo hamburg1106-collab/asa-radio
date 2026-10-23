@@ -1,0 +1,72 @@
+[
+ {
+  "id": "20261024",
+  "title": "最新ITニュースとAIセキュリティの脅威",
+  "date_label": "10/24(土)",
+  "pub_date": "Sat, 24 Oct 2026 08:17:19 +0900",
+  "bytes": 4027706,
+  "seconds": 503,
+  "topics": [
+   {
+    "headline": "タイムズカー情報漏えいと見舞金支給",
+    "source": "ITmedia ビジネス",
+    "link": "https://www.itmedia.co.jp/business/articles/2610/23/news076.html"
+   },
+   {
+    "headline": "GMOクラウドサービスでの不正アクセス被害",
+    "source": "ITmedia ビジネス",
+    "link": "https://www.itmedia.co.jp/business/articles/2610/23/news069.html"
+   },
+   {
+    "headline": "AIエージェント悪用によるサイバー攻撃の猛威",
+    "source": "ITmedia AI+",
+    "link": "https://www.itmedia.co.jp/news/article/2610/23/2000002531/"
+   },
+   {
+    "headline": "チームみらいによるサイバー防衛の緊急提言",
+    "source": "ITmedia AI+",
+    "link": "https://www.itmedia.co.jp/aiplus/article/2610/23/2000002563/"
+   },
+   {
+    "headline": "声で動く協働ロボット「フィジカルAI」開発",
+    "source": "ITmedia AI+",
+    "link": "https://monoist.itmedia.co.jp/mn/articles/2610/23/news021.html"
+   }
+  ]
+ },
+ {
+  "id": "20261023",
+  "title": "本人確認の変革とAIセキュリティ最前線",
+  "date_label": "10/23(金)",
+  "pub_date": "Fri, 23 Oct 2026 20:12:36 +0900",
+  "bytes": 4098132,
+  "seconds": 512,
+  "topics": [
+   {
+    "headline": "メガバンクやPayPay、免許証の写真撮影による本人確認を廃止へ",
+    "source": "Googleニュース 経済",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9lcjlpNXZYVndjdzBfZ3h4dE9RTXVRWHNpMlFvN3RFLVR4VDlXTGZOMThwVXhHcUJiOHFzWmd1RnZFRmZBbmRmOXV3NA?oc=5"
+   },
+   {
+    "headline": "政府与党、ガソリン補助金の段階的縮小を検討 12月から値上げ案",
+    "source": "Googleニュース 経済",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWkNUVGlJOGQ1UzQ5ZUtqQzc1US1peWxHdlV1LThOSzVhMUlxVkR3T1JrdmF1NDkxR2trVms4cjNfT0M0YnBMV0tLZmdoZmxxRDlyV08zeWN2U29XakdOeExNUTJhLVExNHBTUlVNazFQcmZXSk5reXZXc1FuYTNUYkQ4N1JfQQ?oc=5"
+   },
+   {
+    "headline": "パナソニックHD、利用禁止の生成AIに従業員ら33万人分の情報送出",
+    "source": "Googleニュース 生成AI",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1JR0xRMms3cUlIbHJTVkFSckliejBwUGJMaTR1LWJZQTdoaVRpQXliblctRlROelZnY0tVNGZUS3pka2psZVFvM2kySXFXdFFwV1VEWjV4YU1EdnFyZy1NNExUbUlTcTR3UFJ3VA?oc=5"
+   },
+   {
+    "headline": "プログラミング言語PHPの脆弱性、ソフトバンク緊急速報停止など影響拡大",
+    "source": "Googleニュース 経済",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBTRzNxclRIWEFFX08yWTVTZEtxcGtreS1jSEJ1UUpZUXNFeGFyRVZjMUFURUZ0SXVHSE1sWFl3ZTJvWHpPZWc5UmlXcmhYeUJfRDZvSDZLOFJXel9PcHJZUkhIbw?oc=5"
+   },
+   {
+    "headline": "アップル初の折りたたみスマホ「iPhone Duo」発売 価格は36万円超",
+    "source": "Googleニュース 経済",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSdFNtRU1wWjFUVV9xVWhGTUlmR3dNanRrUFl1ZHAzTUw3X3F1cHBtMUpsMUFrUDRScW43b2NSNktaM3Y3bVFvNmc2dk9iLVk2QzVJSWRvbjU4Y1NmSENaZHl5emxxbHFzX1R5cFBzOA?oc=5"
+   }
+  ]
+ }
+]

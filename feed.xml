@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>あさラジ</title>
+    <link>https://hamburg1106-collab.github.io/asa-radio/</link>
+    <atom:link href="https://hamburg1106-collab.github.io/asa-radio/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>AI・テックと経済のニュースを、毎朝10分の掛け合いでお届けする自分用ラジオ。</description>
+    <language>ja</language>
+    <itunes:author>あさラジ</itunes:author>
+    <itunes:image href="https://hamburg1106-collab.github.io/asa-radio/cover.png"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>yes</itunes:block>
+    <item>
+      <title>10/24(土) 最新ITニュースとAIセキュリティの脅威</title>
+      <guid isPermaLink="false">asa-radio-20261024</guid>
+      <pubDate>Sat, 24 Oct 2026 08:17:19 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261024.mp3" length="4027706" type="audio/mpeg"/>
+      <itunes:duration>503</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://www.itmedia.co.jp/business/articles/2610/23/news076.html">タイムズカー情報漏えいと見舞金支給</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/23/news069.html">GMOクラウドサービスでの不正アクセス被害</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/news/article/2610/23/2000002531/">AIエージェント悪用によるサイバー攻撃の猛威</a>（ITmedia AI+）</li><li><a href="https://www.itmedia.co.jp/aiplus/article/2610/23/2000002563/">チームみらいによるサイバー防衛の緊急提言</a>（ITmedia AI+）</li><li><a href="https://monoist.itmedia.co.jp/mn/articles/2610/23/news021.html">声で動く協働ロボット「フィジカルAI」開発</a>（ITmedia AI+）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/23(金) 本人確認の変革とAIセキュリティ最前線</title>
+      <guid isPermaLink="false">asa-radio-20261023</guid>
+      <pubDate>Fri, 23 Oct 2026 20:12:36 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261023.mp3" length="4098132" type="audio/mpeg"/>
+      <itunes:duration>512</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE9lcjlpNXZYVndjdzBfZ3h4dE9RTXVRWHNpMlFvN3RFLVR4VDlXTGZOMThwVXhHcUJiOHFzWmd1RnZFRmZBbmRmOXV3NA?oc=5">メガバンクやPayPay、免許証の写真撮影による本人確認を廃止へ</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNWkNUVGlJOGQ1UzQ5ZUtqQzc1US1peWxHdlV1LThOSzVhMUlxVkR3T1JrdmF1NDkxR2trVms4cjNfT0M0YnBMV0tLZmdoZmxxRDlyV08zeWN2U29XakdOeExNUTJhLVExNHBTUlVNazFQcmZXSk5reXZXc1FuYTNUYkQ4N1JfQQ?oc=5">政府与党、ガソリン補助金の段階的縮小を検討 12月から値上げ案</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1JR0xRMms3cUlIbHJTVkFSckliejBwUGJMaTR1LWJZQTdoaVRpQXliblctRlROelZnY0tVNGZUS3pka2psZVFvM2kySXFXdFFwV1VEWjV4YU1EdnFyZy1NNExUbUlTcTR3UFJ3VA?oc=5">パナソニックHD、利用禁止の生成AIに従業員ら33万人分の情報送出</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBTRzNxclRIWEFFX08yWTVTZEtxcGtreS1jSEJ1UUpZUXNFeGFyRVZjMUFURUZ0SXVHSE1sWFl3ZTJvWHpPZWc5UmlXcmhYeUJfRDZvSDZLOFJXel9PcHJZUkhIbw?oc=5">プログラミング言語PHPの脆弱性、ソフトバンク緊急速報停止など影響拡大</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBSdFNtRU1wWjFUVV9xVWhGTUlmR3dNanRrUFl1ZHAzTUw3X3F1cHBtMUpsMUFrUDRScW43b2NSNktaM3Y3bVFvNmc2dk9iLVk2QzVJSWRvbjU4Y1NmSENaZHl5emxxbHFzX1R5cFBzOA?oc=5">アップル初の折りたたみスマホ「iPhone Duo」発売 価格は36万円超</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+  </channel>
+</rss>
