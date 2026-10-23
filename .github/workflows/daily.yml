@@ -38,10 +38,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      # aptでの導入は2026-10-23に20分以上止まったので、pipの静的ビルドを使う
       - name: ffmpeg
-        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+        timeout-minutes: 5
+        run: pip install imageio-ffmpeg
 
       - name: 今日の回をつくる
+        timeout-minutes: 20
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python make_episode.py --out site
