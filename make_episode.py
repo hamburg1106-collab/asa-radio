@@ -45,7 +45,8 @@ HOSTS = {
     "ユウ": {"tts": "Yu", "voice": "Puck", "role": "聞き役。素朴な疑問を投げ、生活やお金への影響を聞きたがる"},
 }
 
-TEXT_MODEL = os.environ.get("TEXT_MODEL", "gemini-3.5-flash")
+# 混雑(503)や枠切れ(429)なら次のモデルへ
+TEXT_MODELS = os.environ.get("TEXT_MODELS", "gemini-3.5-flash,gemini-3.8-flash,gemini-3.5-flash-lite").split(",")
 TTS_MODELS = os.environ.get("TTS_MODELS", "gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts").split(",")
 API = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
 TTS_CHUNK_CHARS = 900  # 1回のTTSに渡す文字数の目安（約3分）
@@ -146,6 +147,19 @@ def gemini(model, body, retries=4):
             raise err
 
 
+def gemini_text(body, retries=3):
+    last = None
+    for model in TEXT_MODELS:
+        try:
+            return gemini(model.strip(), body, retries)
+        except ApiError as e:
+            last = e
+            if e.status == 400:
+                raise
+            log(f"  {model.strip()} HTTP {e.status} → 次のモデルへ")
+    raise last
+
+
 def text_of(resp):
     parts = resp["candidates"][0]["content"]["parts"]
     return "".join(p.get("text", "") for p in parts if not p.get("thought"))
@@ -161,10 +175,11 @@ AI・テックと経済・お金の話題から、聞き手の生活や仕事に
 
 {listing}"""
     try:
-        resp = gemini(TEXT_MODEL, {
+        # 無料枠では検索が429になる（2026-10-23）。課金を有効にしたら効くようになる
+        resp = gemini(TEXT_MODELS[0].strip(), {
             "contents": [{"parts": [{"text": prompt}]}],
             "tools": [{"google_search": {}}],
-        }, retries=2)
+        }, retries=1)
         notes = text_of(resp)
         log(f"  検索メモ {len(notes)}字")
         return notes
@@ -209,7 +224,7 @@ def write_script(news, notes, today):
         },
         "required": ["title", "topics", "turns"],
     }
-    resp = gemini(TEXT_MODEL, {
+    resp = gemini_text({
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "responseSchema": schema},
     })

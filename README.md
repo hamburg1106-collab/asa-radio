@@ -12,7 +12,8 @@
 - APIキー: リポジトリの Secrets に `GEMINI_API_KEY`
 - 声・話者: `make_episode.py` の `HOSTS`
 - ニュース元: `FEEDS`
-- モデル: 環境変数 `TEXT_MODEL` / `TTS_MODELS`（カンマ区切り。429なら次を使う）
+- モデル: 環境変数 `TEXT_MODELS` / `TTS_MODELS`（カンマ区切り。混雑や枠切れなら次を使う）
+- 検索での裏取りは無料枠だと使えない（429）。そのときはRSSだけで台本を作る
 
 ## 手で動かす
 
