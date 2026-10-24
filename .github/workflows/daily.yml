@@ -2,7 +2,11 @@ name: daily-episode
 
 on:
   schedule:
-    - cron: "30 20 * * *" # 毎朝5:30（日本時間）。GitHub側の混雑で数十分遅れることがある
+    # 3:07 / 4:07 / 5:07（日本時間）。GitHubの定時実行は数時間遅れることがある（10/24は5:30予定が8:17開始）ので3回仕掛け、
+    # できた後の回は何もせず終わる。0分・30分ちょうどは混むので避ける
+    - cron: "7 18 * * *"
+    - cron: "7 19 * * *"
+    - cron: "7 20 * * *"
   workflow_dispatch:
 
 permissions:
@@ -34,16 +38,28 @@ jobs:
             mkdir site
           fi
 
-      - uses: actions/setup-python@v5
+      # 定時実行で今日の回がもうあれば終わり（手動実行は作り直す）
+      - name: 今日の分がもうあるか
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "site/episodes/$(TZ=Asia/Tokyo date +%Y%m%d).mp3" ]; then
+            echo "今日の回は作成済み"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.check.outputs.skip != 'true'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       # aptでの導入は2026-10-23に20分以上止まったので、pipの静的ビルドを使う
       - name: ffmpeg
+        if: steps.check.outputs.skip != 'true'
         timeout-minutes: 5
         run: pip install imageio-ffmpeg
 
       - name: 今日の回をつくる
+        if: steps.check.outputs.skip != 'true'
         timeout-minutes: 20
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -51,6 +67,7 @@ jobs:
 
       # 履歴を残さず1コミットで上書きし、リポジトリが音声で膨らまないようにする
       - name: episodes ブランチに保存
+        if: steps.check.outputs.skip != 'true'
         working-directory: site
         run: |
           git init -q -b episodes
@@ -61,9 +78,11 @@ jobs:
           git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" episodes
           rm -rf .git
 
-      - uses: actions/upload-pages-artifact@v3
+      - if: steps.check.outputs.skip != 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
       - id: deploy
+        if: steps.check.outputs.skip != 'true'
         uses: actions/deploy-pages@v4
