@@ -56,7 +56,7 @@ jobs:
       - name: ffmpeg
         if: steps.check.outputs.skip != 'true'
         timeout-minutes: 5
-        run: pip install imageio-ffmpeg
+        run: pip install imageio-ffmpeg numpy
 
       - name: 今日の回をつくる
         if: steps.check.outputs.skip != 'true'

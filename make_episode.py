@@ -287,6 +287,56 @@ def ffmpeg_bin():
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
+def clean_chunk(audio):
+    """TTS1回分の継ぎ目を整える。
+    Gemini TTSは末尾に0.14秒ほどの「ザッ」という雑音を付けてくる（頭にも短いプチ音）。
+    無音を挟んだ短くて平坦な（ホワイトノイズに近い）音を前後から削り、短くフェードをかける"""
+    import numpy as np
+    if audio[:4] == b"RIFF":  # WAVで返ってきたらヘッダーを外す
+        audio = audio[audio.find(b"data") + 8:]
+    x = np.frombuffer(audio[: len(audio) // 2 * 2], "<i2").astype(np.float32)
+    w = SAMPLE_RATE // 100  # 10ms
+    n = len(x) // w
+    if n < 10:
+        return audio
+    rms = np.sqrt((x[: n * w].reshape(n, w) ** 2).mean(1))
+    # 50ms以上の無音で区切った「音のかたまり」
+    segs, start, quiet = [], None, 0
+    for k in range(n):
+        if rms[k] > 300:
+            if start is None:
+                start = k
+            quiet, end = 0, k + 1
+        elif start is not None:
+            quiet += 1
+            if quiet >= 5:
+                segs.append((start, end))
+                start = None
+    if start is not None:
+        segs.append((start, end))
+
+    def is_noise(seg):
+        a, b = seg
+        if b - a > 25:  # 250msより長ければ声
+            return False
+        s = np.abs(np.fft.rfft(x[a * w:b * w] * np.hanning((b - a) * w))) + 1e-9
+        return np.exp(np.log(s).mean()) / s.mean() > 0.65
+
+    while segs and is_noise(segs[-1]):
+        segs.pop()
+    while segs and is_noise(segs[0]):
+        segs.pop(0)
+    if not segs:
+        return audio
+    margin = 10  # 100ms
+    x = x[max(0, segs[0][0] - margin) * w: min(n, segs[-1][1] + margin) * w]
+    fade = SAMPLE_RATE // 50  # 20ms
+    ramp = np.linspace(0, 1, fade)
+    x[:fade] *= ramp
+    x[-fade:] *= ramp[::-1]
+    return x.astype("<i2").tobytes()
+
+
 def to_mp3(pcm, out):
     subprocess.run([
         ffmpeg_bin(), "-y", "-loglevel", "error",
@@ -379,6 +429,7 @@ def main():
             if i:
                 time.sleep(TTS_GAP_SEC)
             audio, model = tts(chunk)
+            audio = clean_chunk(audio)
             log(f"  {i + 1}本目 {len(audio) / 2 / SAMPLE_RATE:.0f}秒 ({model})")
             pcm += (gap if pcm else b"") + audio
 
