@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>あさラジ</title>
+    <link>https://hamburg1106-collab.github.io/asa-radio/</link>
+    <atom:link href="https://hamburg1106-collab.github.io/asa-radio/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>AI・テックと経済のニュースを、毎朝10分の掛け合いでお届けする自分用ラジオ。</description>
+    <language>ja</language>
+    <itunes:author>あさラジ</itunes:author>
+    <itunes:image href="https://hamburg1106-collab.github.io/asa-radio/cover.png"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>yes</itunes:block>
+    <item>
+      <title>11/1(日) 11月1日ニュース AI偽動画とガソリン補助金縮小のゆくえ</title>
+      <guid isPermaLink="false">asa-radio-20261101</guid>
+      <pubDate>Sun, 01 Nov 2026 06:25:13 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261101.mp3" length="3945786" type="audio/mpeg"/>
+      <itunes:duration>493</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTnlpck52RmFVSExIdFRKQjZJbzZKSjl2Mjc0aHFuM3B5RzlJdUNBYm5ubHJGcURjMmE0ZjNDQnpQa191NlQxbmcxWGp0WGpCQk8wZlAtVkJXYWU5UTZJcFZ4Q1FKY1hGWF9Hd1ZOYWZlQXhmTHcydW1mQ2JZYkRUQzZUXzZ2bTZo?oc=5">米国中間選挙で広がる生成AIの偽動画問題</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1URG1sVUVHd25fc2I5WHc1ZGxSbnZFcXhEaUJscm12TzlzM19rTWtXYXV4VjdEeGNDeGVWNU9nZWRzRDMzaEhiVlRBZHVoRGxiYzBmb2ZhOVpxSWdQcU5Ibl91SdIBaEFVX3lxTFA3ZnJHNERIeVZUV05fNnk0Wkowdi1HemVfRDhEOVRoT3ZYQXRDWGE5cTZaV1R0WUR6MkFNanQ2S25fOVdiTF94NkJMNjhJeXBORWlJUi1tNnZOS1NSRVlxLWxCazRES2RN?oc=5">米IT大手の決算発表で懸念されるAI投資の重さと株価下落</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9JWWg5YTRNYWo0RExhSF9RME8yT09ZQlZXWnBuamx0dm9VS1lIek9pc0hLb0JIUGVTaGo1TmZrT1htMUhyNmdudHVrb08wRkVPUWRaVzZJSDFYdjg1VHRBdnJWeGI3bkhWRjB6WUtCTEN1Wnp6bkZBYVJwWlVwMEE?oc=5">政府がガソリン補助金の縮小へ向けて検討</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1VeG1nclpIRld1WGNSWWo3VV9Tc2liV2JNY3htZU9QMlk5Z281b0ROZUlPNmotNnNzVDhSSFc0bzJyTDIwS2ljeUx1OFc3T2VISWNuUWM5Q1YtRzY1U0hacTB1T0E?oc=5">クラブツーリズムで最大432万件の個人情報漏えいの可能性</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE16Zmdha0hNai16UlVLZ3NzTU9qVDVfSFRha2FpeFV2bC1fM1BWcTlwRnBpeThXZ29UOXZWbGNwYUtBaHFIQV9LTndZUEtuSjNRZzBnOXloUGhQSmZ4SGcyb2dXRkU?oc=5">トヨタと米ウェイモによる自動運転ロボタクシーの試験運行計画</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/31(土) 2026年10月31日あさラジ：AI進化と経済・生活への影響</title>
+      <guid isPermaLink="false">asa-radio-20261031</guid>
+      <pubDate>Sat, 31 Oct 2026 07:13:30 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261031.mp3" length="3889989" type="audio/mpeg"/>
+      <itunes:duration>486</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://www.itmedia.co.jp/business/articles/2610/30/news090.html">キオクシアの中間決算で過去最高益を記録</a>（ITmedia AI+）</li><li><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE02bEk3eGoySjRPa1BLaHBhNkNoOU53RFRlckJkQ1NtUTd6SGRQUV91UmFVcFUtSkdGQUotMEZaaVhuc0xoZ240eUFtMGdrQk0wNHdMRU1JelA5R2xMajJGanEtUHg?oc=5">トヨタとウェイモが日本で完全自動運転タクシーを2027年運行開始</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOc3c4aGRjMjktVGxjRVlqYjRJOXcyQlRuRTBQblJRdzNNMDlmMy0weDhLYTROYktlNE1VcUxvbHFsaVdwVXFYZUpaeFYxUHF5aUxKVVRUc2FRX1JLREtPOUZqWmFKbzlqV001MEVWTGNTTVlWdjNnZUIzVlBtMEJadDNTNzVXZw?oc=5">米国株式市場急落とAI巨額投資への懸念</a>（Googleニュース 経済）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/30/news075.html">無印良品アプリで最大2726万件の個人情報漏えい可能性</a>（ITmedia ビジネス）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1xVUliUFNiZTJaelRyOWt2XzlpN3JuSlhtbVBOdktCOFJ1SGM1UmN0Qnl3eGQzSWJmMHExVGNiTlRSUU1HeXUtNFJYTjNkcVJlVTZuTjZhaUJKRmQtTlB0SHVKalR0aWhXMXFDTQ?oc=5">SpotifyがAIカバー曲作成機能を導入し収益還元</a>（Googleニュース 生成AI）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/30(金) エネルギー支援見直しと現場AI活用</title>
+      <guid isPermaLink="false">asa-radio-20261030</guid>
+      <pubDate>Fri, 30 Oct 2026 07:41:27 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261030.mp3" length="4101685" type="audio/mpeg"/>
+      <itunes:duration>513</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOSm9RSWxwX0ptWmoyZHNSYWtsYUdtbEdmelh3aXh1MW1CT200c0c3YmlsNzdkNU9ldGotUXZsN2stYzdaN1RPYnBOeExkaldEUlMzTEFHTXoxdzlpRVJCQW55VlFLWlh5MldJV2hGdi1yengzYkszQUZrU01rT2JCZVlJc1YtUEJtSGxIYw?oc=5">ガソリン補助金の段階縮小と電気ガス支援</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1vVy1qclN0S3JtNzNyTzJwc0lfRERySVJYOUFEVUdPczBlUVc5T01JRE9xdGVqbWlmbE4zdDBiaDdKR0VmeE1wZUdGUHhtLTl3Qng2NDg5a21icW5VNWJKTEpsN0hyNkRvcWFFdw?oc=5">アルファベット株急落とAI投資への懸念</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE13M0Z5MGlpN1RKSThreEVnZ3EwU0daZG1xbDlwdVR3cDJQSnlZWWF1THRkOGlsbGlPU3E3a3I0MUVsVWpHNXo4SUlhSzdDNkE1QUpUQ3lDa0dGOVhuLU1J?oc=5">イオンがフィジカルAIで物流改革</a>（Googleニュース 経済）</li><li><a href="https://kn.itmedia.co.jp/kn/article/2610/30/2000002725/">建設現場で見積書処理をAIで一分に短縮</a>（ITmedia AI+）</li><li><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBId1lzV3hGc1puLVBGZlBVY2UyejBSem1iRElsMEdacmVqN3BaQkNZcXF1NnJUTG5nTVVsamc1MGlpbnBoclZEc01UMmlRNkFzM3ZZeFZDYk1ZRUxvS29PZjhrTlQ?oc=5">年収119万円以下に年5000円の新給付案</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/29(木) あさラジ！10月29日：AI新時代と暮らしの経済ニュース</title>
+      <guid isPermaLink="false">asa-radio-20261029</guid>
+      <pubDate>Thu, 29 Oct 2026 07:29:40 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261029.mp3" length="3609120" type="audio/mpeg"/>
+      <itunes:duration>451</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1YdEo3MHU0dm1pbDlCX0JmZzMzVVF4MDBBUGJpQUpsMTdmV3FxQzFSYUpzUFpPa053WC1Kd0FTaEdFNXlwRGVPcGlsQVJ1M3Q2eGI1N3U2UWJvdEdRanV0ZWJUTGhnWVR5X2Zhdw?oc=5">Amazonが生成AI搭載の「Alexa+」を日本で開始</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mSlVlVGFWWnAxNkIzUTkxUXpNbjIwOU94VS1zMS16VTlhU1pwUnkwbkwyMk52blNTZXVZRUVaWHVId0xxMjQtY2ZaaXZIRHplX3hod09KMFVpd2VBdXdR?oc=5">米FRBが政策金利の据え置きを決定</a>（Googleニュース 経済）</li><li><a href="https://www.itmedia.co.jp/news/article/2610/28/2000002661/">米アンソロピックが自社で創薬活動を開始</a>（ITmedia AI+）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/29/news035.html">サイゼリヤが6年ぶりの値上げでドリア320円に</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/28/news078.html">日本航空で約9万件の予約情報漏えいの恐れ</a>（ITmedia ビジネス）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/28(水) 10月28日あさラジ！AI最新動向と暮らしのお金</title>
+      <guid isPermaLink="false">asa-radio-20261028</guid>
+      <pubDate>Wed, 28 Oct 2026 07:06:28 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261028.mp3" length="3999076" type="audio/mpeg"/>
+      <itunes:duration>500</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002644/">米アンソロピックが上場申請、AIリスクや社内活用を明記</a>（ITmedia AI+）</li><li><a href="https://www.itmedia.co.jp/aiplus/article/2610/27/2000002611/">OpenAIが低コストモデル「GPT-6.1 Terra」を発表</a>（ITmedia AI+）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/28/news041.html">GMO不正アクセス被害で被害者へ最大300万円の見舞金発表</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/enterprise/articles/2610/26/news033.html">HISがAIエージェントで出張見積もりを月100時間削減</a>（ITmedia AI+）</li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PMUN2Vy1POFpaeVM2eDFTZ1QyMW1yVnRFNGdJclF6X0FFWE5ESlJzcTBDMHVJdGo5SXN1RTQwaGpHUXlNTE8xTkxtdlpDN2tpdDQtM3NlazlyZ0VFX2VhRVlrM2EySU56?oc=5">アキダイ社長が国会で消費税減税の現場負担と懸念を言及</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/27(火) 10月27日：AI投資と雇用の変化・身近な情報セキュリティ対策</title>
+      <guid isPermaLink="false">asa-radio-20261027</guid>
+      <pubDate>Tue, 27 Oct 2026 07:35:43 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261027.mp3" length="3759376" type="audio/mpeg"/>
+      <itunes:duration>470</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFByaGJJRm5lTzl2T0taZGJQNFZKb3oyR0ZKTGVjX0xBaWtTX24zY0M2dmJlaXZMVk80bTk1T1dteGN3YWswaEtVcWFSUUFvM1N2UVpsSkh3eEFlUmRqLTNlYW9FSkFzbFBmSHJySmZPRjJkSWoxQ1E?oc=5">米マイクロソフト、AI巨額投資の背景で6万人の希望退職者を募集</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XcThITlVkSHJfZkt2STZwcXFGcUdQZ01Fc2VHeGMxRjRzZ0oyRDJndERFY2ZUcE5RWC1WMndOM09ESUJ6R1lEX3B4NE5kdVRYLTZzN3hZNXNZSDFpN1cw?oc=5">AI開発のアンソロピックが上場申請、最大15兆円以上を調達へ</a>（Googleニュース 経済）</li><li><a href="https://kn.itmedia.co.jp/kn/article/2610/27/2000002583/">伊藤忠インタラクティブがClaude活用の法人向けAIエージェント研修を開始</a>（ITmedia AI+）</li><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GakpFckF1TkRicExmY0pybHg1SmNnY2d6cDVrcTVYVF83YlpXZGw1OXpYVXRTMjJybU5MeE56NUU0cEw3d2dKaklXODRyN05wZFZQVkk2MDVMRVlXMk1GVkVwMXhRZw?oc=5">タイムズカー等で個人情報流出、なりすましで勝手にローン組まれる被害も</a>（Googleニュース 経済）</li><li><a href="https://monoist.itmedia.co.jp/mn/articles/2610/26/news027.html">日本HP、データを外部に出さずローカルで処理できる大規模AI機器を発表</a>（ITmedia AI+）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/26(月) AI活用と身近な経済・セキュリティ情報</title>
+      <guid isPermaLink="false">asa-radio-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 05:44:27 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261026.mp3" length="3575683" type="audio/mpeg"/>
+      <itunes:duration>447</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE13ako0VG9kUF85bmlDREZ6YXkwZmhFV0U4ZDR0Uy1DSHp0Tm11T09Yc2M5eEc5enhFclBCVTVpVVFuT1VDSkFGNXh3SkMyNjJjcnhXMjRPUFBSMG95ZEg0?oc=5">ソフトバンクが緊急地震速報の配信を再開</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE94YUxzX1lmLWVhTUc2akR6TWlzWktsSmR5QVNnaVg5RmZCbGRqdFNxaWZFWkpMM1dMN2FpdnJjVTJBNDgyMndOX0Zxb3F4a3o5Q2ZzUmZOdnU3MFVJVHBv?oc=5">ピッコマなどで約100万件のメールアドレス流出</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBZaGpEYjdMTE1DWUFhbmtidnN2cHZRQTZRMzduNklyaXE2SV83aWVZQldvWXA4Y2dqM0dqZ21jZ3djdDhYN2I1U21ndi1sVktPejdmQUJXZURYckFqclJqajNFbFBCcE9BYnZRaw?oc=5">建設現場での生成AI活用と国土交通省の動き</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1xZW1PbEtnVUtJaWw1dEFBRURyaF9qVW5QN0pqYjlmXy1WOUU1U1duWlRkX3dQQWZlbnZGSjJSamJDVy1USFJSY1NPaTBzbGU0VThhN3lB?oc=5">山梨中央銀行がAIを活用した営業育成を推進</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE85NWxBMXh4RUM1T0dxdjNNRmowbG1WSTloMm9raS1QYzlhbXBfcDNGZTJlMjhRMEppTkxvTTQ2MllnODV3a1IwWTM0eVpVV01RQVB2dGZ3QzJ3UjFMQ3dxc3J1ZGdVcVhaWExJMw?oc=5">東京・日本橋で1.3兆円規模の再開発が進行</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/25(日) 声のAI指針と身元確認の刷新</title>
+      <guid isPermaLink="false">asa-radio-20261025</guid>
+      <pubDate>Sun, 25 Oct 2026 05:39:18 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261025.mp3" length="5265283" type="audio/mpeg"/>
+      <itunes:duration>658</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1weXo4YkVxZzhxdTU1NXNDMVlHQm50ZW5iSVZiSWdBLS12eEU5dUFXZW9WMTMxcmJSdl9ORXcxREtLZ3hJRFVjZkE0TEhjZDdkaW5DNGR0SThiTTN2bzh2NTUwVjF3UQ?oc=5">日俳連が声の生成AI利用ガイドラインを発表</a>（Googleニュース 生成AI）</li><li><a href="https://www.itmedia.co.jp/news/article/2610/24/2000002564/">AIが実在の開発者を標的に英研究所などが報告</a>（ITmedia AI+）</li><li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE80NjZDbXBqQm5VcXpIemtpN2U1SlB1bGdRSkVNQU5zUUtKOFloMmwxYng2R0xxLTJuODdFVTBWaTE0MktHd2xyRFhTSlBkR3U3X2NxX0VaNi1qdGVXVE1PWi1YY0NXcDNyZ1E?oc=5">GMOが能動的サイバー防御の発動を政府に要請</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1IYm5FYlFNVHNnYnd0dl9hcEVGeWpkVjRUNUFxVjdERjFjVnVoMU91OVlaR2pFSlppRUU1LUViNnlreHU0U1A3QjZkTUV3QWxPbFhYTkZXWVJpMFFMY1dJeFBiZnpxR0QwaVk3WDktMkZIUWJSUXdVWGZ0T1lqOHM?oc=5">ガソリン補助金の段階的縮小を政府与党が検討</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lYlFzdzAtMHBnTzFZVmN2Z3BzUkV1UWtTc09lSUF2dUhpV2tnSFNUZER5WjF5bXkzQ3E4M29ORjNKQW94QmNWcW1OMFhabzhHNU5FTV95NzVjVTRuZEY5TQ?oc=5">本人確認で免許証撮影を廃止しIC読み取りへ</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/24(土) 最新ITニュースとAIセキュリティの脅威</title>
+      <guid isPermaLink="false">asa-radio-20261024</guid>
+      <pubDate>Sat, 24 Oct 2026 08:17:19 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261024.mp3" length="4027706" type="audio/mpeg"/>
+      <itunes:duration>503</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://www.itmedia.co.jp/business/articles/2610/23/news076.html">タイムズカー情報漏えいと見舞金支給</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/business/articles/2610/23/news069.html">GMOクラウドサービスでの不正アクセス被害</a>（ITmedia ビジネス）</li><li><a href="https://www.itmedia.co.jp/news/article/2610/23/2000002531/">AIエージェント悪用によるサイバー攻撃の猛威</a>（ITmedia AI+）</li><li><a href="https://www.itmedia.co.jp/aiplus/article/2610/23/2000002563/">チームみらいによるサイバー防衛の緊急提言</a>（ITmedia AI+）</li><li><a href="https://monoist.itmedia.co.jp/mn/articles/2610/23/news021.html">声で動く協働ロボット「フィジカルAI」開発</a>（ITmedia AI+）</li></ul>]]></description>
+    </item>
+    <item>
+      <title>10/23(金) 本人確認の変革とAIセキュリティ最前線</title>
+      <guid isPermaLink="false">asa-radio-20261023</guid>
+      <pubDate>Fri, 23 Oct 2026 20:12:36 +0900</pubDate>
+      <enclosure url="https://hamburg1106-collab.github.io/asa-radio/episodes/20261023.mp3" length="4098132" type="audio/mpeg"/>
+      <itunes:duration>512</itunes:duration>
+      <description><![CDATA[<ul><li><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE9lcjlpNXZYVndjdzBfZ3h4dE9RTXVRWHNpMlFvN3RFLVR4VDlXTGZOMThwVXhHcUJiOHFzWmd1RnZFRmZBbmRmOXV3NA?oc=5">メガバンクやPayPay、免許証の写真撮影による本人確認を廃止へ</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNWkNUVGlJOGQ1UzQ5ZUtqQzc1US1peWxHdlV1LThOSzVhMUlxVkR3T1JrdmF1NDkxR2trVms4cjNfT0M0YnBMV0tLZmdoZmxxRDlyV08zeWN2U29XakdOeExNUTJhLVExNHBTUlVNazFQcmZXSk5reXZXc1FuYTNUYkQ4N1JfQQ?oc=5">政府与党、ガソリン補助金の段階的縮小を検討 12月から値上げ案</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1JR0xRMms3cUlIbHJTVkFSckliejBwUGJMaTR1LWJZQTdoaVRpQXliblctRlROelZnY0tVNGZUS3pka2psZVFvM2kySXFXdFFwV1VEWjV4YU1EdnFyZy1NNExUbUlTcTR3UFJ3VA?oc=5">パナソニックHD、利用禁止の生成AIに従業員ら33万人分の情報送出</a>（Googleニュース 生成AI）</li><li><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBTRzNxclRIWEFFX08yWTVTZEtxcGtreS1jSEJ1UUpZUXNFeGFyRVZjMUFURUZ0SXVHSE1sWFl3ZTJvWHpPZWc5UmlXcmhYeUJfRDZvSDZLOFJXel9PcHJZUkhIbw?oc=5">プログラミング言語PHPの脆弱性、ソフトバンク緊急速報停止など影響拡大</a>（Googleニュース 経済）</li><li><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBSdFNtRU1wWjFUVV9xVWhGTUlmR3dNanRrUFl1ZHAzTUw3X3F1cHBtMUpsMUFrUDRScW43b2NSNktaM3Y3bVFvNmc2dk9iLVk2QzVJSWRvbjU4Y1NmSENaZHl5emxxbHFzX1R5cFBzOA?oc=5">アップル初の折りたたみスマホ「iPhone Duo」発売 価格は36万円超</a>（Googleニュース 経済）</li></ul>]]></description>
+    </item>
+  </channel>
+</rss>
